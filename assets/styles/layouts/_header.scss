@@ -1,0 +1,83 @@
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  padding: 0 50px;
+  color: $white1;
+
+  nav {
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 10% 82% 8%;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    .logo {
+      font-family: $font1;
+      font-weight: 100;
+      font-size: 2rem;
+      text-align: left;
+    }
+
+    .nav-elements {
+      @include alignChildren(space-around);
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      padding: 0 70px;
+      cursor: pointer;
+
+      li {
+        transition: color 0.3s;
+        &:hover {
+          color: $color1;
+        }
+      }
+    }
+
+    .nav-right {
+      @include alignChildren(space-around);
+      font-size: 0.8rem;
+
+      i {
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.3);
+          color: $color1;
+        }
+      }
+    }
+  }
+  .header-text {
+    @include childCenter;
+    height: 88vh;
+
+    div {
+      margin-top: -150px;
+
+      h2 {
+        font-family: $font1;
+        font-size: 3rem;
+        font-weight: 100;
+        color: $color1;
+      }
+
+      h1 {
+        font-size: 3.2rem;
+        letter-spacing: 10px;
+        font-weight: 700;
+        margin-top: -28px;
+        font-family: $font2;
+      }
+
+      img {
+        height: 27px;
+        margin: 32px 0;
+      }
+
+      h6 {
+        font-size: 0.75rem;
+        letter-spacing: 3px;
+        font-weight: 100;
+      }
+    }
+  }
+}
